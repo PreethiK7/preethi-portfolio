@@ -38,7 +38,7 @@ export default [
     },
     {
         title: "Portfolio Website using React JS",
-        link: "https://github.com/PreethiK7/Portfolio",
+        link: "https://github.com/PreethiK7/preethi-portfolio",
         imageUrl: PortfolioImg,
         id: 6
     }
