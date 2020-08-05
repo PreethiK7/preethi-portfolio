@@ -4,6 +4,8 @@ import ContactImg from "./Images/ContactApp.png"
 import DatabaseImg from "./Images/DatabaseApp.png"
 import PortfolioImg from "./Images/PortfolioApp.png"
 import SpamHamImg from "./Images/SpamHamApp.jpg"
+import TwitterSentimentImg from "./Images/TwitterSentimentAnalysis.png"
+import ImageClassifyImg from "./Images/ImageClassification.png"
 
 export default [
     {
@@ -41,5 +43,17 @@ export default [
         link: "https://github.com/PreethiK7/preethi-portfolio",
         imageUrl: PortfolioImg,
         id: 6
+    },
+    {
+        title: "Twitter Sentiment Analysis using Apache Spark and Kafka",
+        link: "https://github.com/PreethiK7/TwitterSentimentAnalysis",
+        imageUrl: TwitterSentimentImg,
+        id: 7
+    },
+    {
+        title: "Image Classification using Deep Learning",
+        link: "https://github.com/PreethiK7/ImageClassification",
+        imageUrl: ImageClassifyImg,
+        id: 8
     }
 ]
