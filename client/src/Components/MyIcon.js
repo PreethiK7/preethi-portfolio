@@ -1,5 +1,5 @@
 import React from "react"
-import {DiHtml5, DiJavascript, DiJava, DiReact, DiNodejs, DiPython, DiCss3, DiAngularSimple, DiSwift, DiDjango, DiAws, DiGit, DiMysql, DiSpark, DiScala} from "react-icons/di"
+import {DiHtml5, DiJavascript, DiJava, DiReact, DiNodejs, DiPython, DiCss3, DiAngularSimple, DiSwift, DiDjango, DiAws, DiGit, DiMysql, DiSpark, DiScala, DiMongodb} from "react-icons/di"
 
 class MyIcon extends React.Component {
     constructor({name}){
@@ -68,6 +68,9 @@ class MyIcon extends React.Component {
         }
         else if(this.state.iconName === "Scala"){
             icon = <DiScala/>
+        }
+        else if(this.state.iconName === "MongoDB"){
+            icon = <DiMongodb/>
         }
         return(
             <li className={this.state.isHovering? "hovered-icon" : ""} onMouseEnter={this.handleMouseHover} onMouseLeave={this.handleMouseHover}>
