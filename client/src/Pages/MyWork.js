@@ -3,6 +3,8 @@ import NavBar from "../Components/Navbar";
 import Loader from "../Components/Loader";
 import projects_data from "../projects_data";
 import Project from "../Components/Project";
+import Header from "../Components/Header";
+import Footer from "../Components/Footer";
 
 class MyWork extends React.Component{
     constructor(){
@@ -34,18 +36,22 @@ class MyWork extends React.Component{
         } else {
             return (
                 <>
+                    <Header/>
                     <NavBar page="MyWork"/>
-                    <div className="my-work-content">
-                        <div className="page-title">&lt;&nbsp;Projects&nbsp;&gt;</div>
-                        <br/>
-                        <div className="my-work-text">
-                            {
-                                this.state.projects.map(proj => (
-                                    <Project key={proj.id} link={proj.link} title={proj.title} imageUrl={proj.imageUrl} id={proj.id} />
-                                ))
-                            }
+                    <main>
+                        <div className="my-work-content content-div">
+                            <div className="page-title">&lt;&nbsp;Projects&nbsp;&gt;</div>
+                            <br/>
+                            <div className="my-work-text">
+                                {
+                                    this.state.projects.map(proj => (
+                                        <Project key={proj.id} link={proj.link} title={proj.title} imageUrl={proj.imageUrl} id={proj.id} />
+                                    ))
+                                }
+                            </div>
                         </div>
-                    </div>
+                    </main>
+                    <Footer/>
                 </>
             )
         }
