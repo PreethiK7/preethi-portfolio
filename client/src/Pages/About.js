@@ -4,6 +4,8 @@ import Loader from "../Components/Loader";
 import {GiSpellBook, GiCookingPot, GiPizzaSlice, GiHarryPotterSkull, GiTv, GiLoveSong} from "react-icons/gi"
 import {FaLaptopCode, FaRegGrinStars, FaGraduationCap} from "react-icons/fa"
 import {IoIosPeople} from "react-icons/io"
+import Header from "../Components/Header";
+import Footer from "../Components/Footer";
 
 
 class About extends React.Component{
@@ -36,24 +38,28 @@ class About extends React.Component{
         else {
             return (
                 <>
+                    <Header/>
                     <NavBar page="About"/>
-                    <div className="about-content">
-                        <div className="page-title">&lt;&nbsp;Get to know me&nbsp;&gt;<br/><span>** Me talking about myself **</span></div>
-                        <br/>
-                        <div className="about-text">
-                            <span>I am a Graduate Student <FaGraduationCap/> in CS at UT-Dallas. I am obsessed with solving problems and even more obsessed with developing the solutions.</span><br/><br/>
-                            Enjoy reading Kane and Abel, Da Vince Code, Harry Potter<GiSpellBook/><br/>
-                            Loves Cooking <GiCookingPot/> Can eat Italian<GiPizzaSlice/> any time of day<br/>
-                            Would love to be in Gryffindor <GiHarryPotterSkull/> <br/>
-                            Binge watches <GiTv /> Friends, Naruto, Wizards of Waverly Place <br/>
-                            <GiLoveSong/>Humn to A Whole New World, The Climb, Little Things <br/>
+                    <main className="about-page">
+                        <div className="about-content">
+                            <div className="page-title">&lt;&nbsp;Get to know me&nbsp;&gt;<br/><span>** Me talking about myself **</span></div>
                             <br/>
-                            <br/>
-                            <span>Interested in Web based Application Development <FaLaptopCode/> and working on innovative projects with positive people. <IoIosPeople/></span>
-                            <div><br/> - Preethi Kesavan <FaRegGrinStars/></div>
+                            <div className="about-text">
+                                <span>I am a Graduate Student <FaGraduationCap/> in CS at UT-Dallas. I am obsessed with solving problems and even more obsessed with developing the solutions.</span><br/><br/>
+                                Enjoy reading Kane and Abel, Da Vince Code, Harry Potter<GiSpellBook/><br/>
+                                Loves Cooking <GiCookingPot/> Can eat Italian<GiPizzaSlice/> any time of day<br/>
+                                Would love to be in Gryffindor <GiHarryPotterSkull/> <br/>
+                                Binge watches <GiTv /> Friends, Naruto, Wizards of Waverly Place <br/>
+                                <GiLoveSong/>Humn to A Whole New World, The Climb, Little Things <br/>
+                                <br/>
+                                <br/>
+                                <span>Interested in Web based Application Development <FaLaptopCode/> and working on innovative projects with positive people. <IoIosPeople/></span>
+                                <div><br/> - Preethi Kesavan <FaRegGrinStars/></div>
+                            </div>
                         </div>
                         <img className="my-photo" src={require("../Images/Me_1.JPG")} alt="It's me!"/>
-                    </div>
+                    </main>
+                    <Footer/>
                 </>
             )
         }
