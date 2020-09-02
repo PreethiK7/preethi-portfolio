@@ -4,6 +4,8 @@ import Loader from "../Components/Loader";
 import {Link} from "react-router-dom"
 import icons from "../icon_data"
 import MyIcon from "../Components/MyIcon";
+import Header from "../Components/Header";
+import Footer from "../Components/Footer";
 
 class Skills extends React.Component{
     constructor(){
@@ -35,26 +37,30 @@ class Skills extends React.Component{
         else{
             return (
                 <>
+                    <Header/>
                     <NavBar page="Skills"/>
-                    <div className="skills-content">
-                        <div className="page-title">&lt;&nbsp;Skills & Experience&nbsp;&gt;</div>
-                        <br/>
-                        <div className="skills-text">
-                            The main area of my expertise is Full Stack Development (Client & Server side of the Web)<br/><br/>
-                            HTML, JavaScript, Java, building small Full Stack Applications. <br/><br/>
-                            I have experience in <b>Full Stack Software Development</b> working as 'Member Technical Staff' at <b>Zoho Corporation</b> for a year and a half.<br/><br/>
-                            Visit my <a href="https://www.linkedin.com/in/preethik7">LinkedIn</a> profile for additional information or <Link to="/Contact">Reach Out To Me Here</Link>
+                    <main className="skills-page">
+                        <div className="skills-content content-div">
+                            <div className="page-title">&lt;&nbsp;Skills & Experience&nbsp;&gt;</div>
+                            <br/>
+                            <div className="skills-text">
+                                The main area of my expertise is Full Stack Development (Client & Server side of the Web)<br/><br/>
+                                HTML, JavaScript, Java, building small Full Stack Applications. <br/><br/>
+                                I have experience in <b>Full Stack Software Development</b> working as 'Member Technical Staff' at <b>Zoho Corporation</b> for a year and a half.<br/><br/>
+                                Visit my <a href="https://www.linkedin.com/in/preethik7">LinkedIn</a> profile for additional information or <Link to="/Contact">Reach Out To Me Here</Link>
+                            </div>
                         </div>
-                    </div>
-                    <div className="skills-images">
-                        <ul>
-                            {
-                                icons.map(icon => (
-                                    <MyIcon name={icon} />
-                                ))
-                            }
-                        </ul>
-                    </div>
+                        <div className="skills-images">
+                            <ul>
+                                {
+                                    icons.map(icon => (
+                                        <MyIcon name={icon} />
+                                    ))
+                                }
+                            </ul>
+                        </div>
+                    </main>
+                    <Footer/>
                 </>
             )
         }
