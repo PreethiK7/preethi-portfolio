@@ -13,5 +13,6 @@ export default [
     "Python",
     "Swift",
     "Django",
-    "SQL"
+    "SQL",
+    "MongoDB"
 ]
