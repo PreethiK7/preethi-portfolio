@@ -19,7 +19,7 @@ header {
     padding: 10px;
     text-align: center;
     font-size: 30px;
-    background-color: black;
+    background-color: #383838;
     color: antiquewhite;
     text-decoration: none;
     text-align: center;
@@ -50,7 +50,7 @@ body{
 nav {
     text-align: center;
     font-size: 18px;
-    background-color: black;
+    background-color: #383838;
     color: white;
     padding: 10px;
 }
@@ -81,7 +81,7 @@ footer {
     grid-column: span 3;
     text-align: center;
     font-size: 15px;
-    background-color: black;
+    background-color: #383838;
     color: white;
 }
 
