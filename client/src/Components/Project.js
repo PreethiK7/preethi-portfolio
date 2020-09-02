@@ -26,7 +26,7 @@ class Project extends React.Component {
     render() {
         return(
             <div onMouseEnter={this.handleMouseHover} onMouseLeave={this.handleMouseHover} className="project-tile">
-                <a href={this.state.link} target="_blank">
+                <a href={this.state.link} target="_blank"  rel="noopener noreferrer">
                     <span className={this.state.isHovering?"project-title hovered-class":"project-title"}>{this.state.title}</span>
                     <br/>
                     <img className={this.state.isHovering?"project-image hovered-image-class":"project-image"} src={this.state.imageUrl} alt={this.state.id}/>
