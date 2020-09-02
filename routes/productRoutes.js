@@ -1,7 +1,6 @@
 module.exports = (app) => {
 
     const nodemailer = require('nodemailer');
-    const creds = require('../models/config');
 
     var transport = {
         service: 'gmail',

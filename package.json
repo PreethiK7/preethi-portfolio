@@ -16,7 +16,8 @@
     "cors": "^2.8.5",
     "debug": "~2.6.9",
     "express": "~4.16.1",
-    "nodemailer": "^6.4.10"
+    "nodemailer": "^6.4.10",
+    "dotenv": "^8.2.0"
   },
   "devDependencies": {
     "concurrently": "^4.1.1",
