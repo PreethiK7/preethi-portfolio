@@ -3,6 +3,8 @@ import NavBar from "../Components/Navbar";
 import Loader from "../Components/Loader";
 import { renderEmail } from 'react-html-email'
 import axios from "axios"
+import Header from "../Components/Header";
+import Footer from "../Components/Footer";
 
 
 class Contact extends React.Component{
@@ -85,25 +87,26 @@ class Contact extends React.Component{
         else{
             return (
                 <>
+                    <Header/>
                     <NavBar page="Contact"/>
-                    <div className="contact-content">
-                        <div className="page-title">&lt;&nbsp;Drop a Message&nbsp;&gt;</div>
-                        <br/>
-                        <div className="contact-text">
-                            I am interested in Internship / Co-Op and Full Time opportunities in the United States. However, if you have any other queries, feel free to contact me using the below form.
+                    <main className="contact-page">
+                        <div className="contact-content">
+                            <div className="page-title">&lt;&nbsp;Drop a Message&nbsp;&gt;</div>
+                            <br/>
+                            <div className="contact-text">
+                                I am interested in Internship / Co-Op and Full Time opportunities in the United States. However, if you have any other queries, feel free to contact me using the below form.
+                            </div>
+                            <br/>
+                            <form className="contact-form" onSubmit={this.handleSubmit}>
+                                <input type="text" name="name" placeholder="Name" id="contactName" value={this.state.name} onChange={this.handleChange}/>
+                                <input type="text" name="email" placeholder="Email" id="contactEmail" value={this.state.email} onChange={this.handleChange}/>
+                                <input type="text" name="subject" placeholder="Subject" id="contactSubject" value={this.state.subject} onChange={this.handleChange}/>
+                                <textarea name="message" placeholder="Message" id="contactMessage" value={this.state.message} onChange={this.handleChange}/>
+                                <button type="submit" id="contactSend">Send</button>
+                            </form>
                         </div>
-                        <br/>
-                        <form className="contact-form" onSubmit={this.handleSubmit}>
-                            <input type="text" name="name" placeholder="Name" id="contactName" value={this.state.name} onChange={this.handleChange}/>
-                            <input type="text" name="email" placeholder="Email" id="contactEmail" value={this.state.email} onChange={this.handleChange}/>
-                            <br/>
-                            <input type="text" name="subject" placeholder="Subject" id="contactSubject" value={this.state.subject} onChange={this.handleChange}/>
-                            <br/>
-                            <textarea name="message" placeholder="Message" id="contactMessage" value={this.state.message} onChange={this.handleChange}/>
-                            <br/>
-                            <button type="submit" id="contactSend">Send</button>
-                        </form>
-                    </div>
+                    </main>
+                    <Footer/>
                 </>
             )
         }
