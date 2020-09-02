@@ -6,6 +6,7 @@ import PortfolioImg from "./Images/PortfolioApp.png"
 import SpamHamImg from "./Images/SpamHamApp.jpg"
 import TwitterSentimentImg from "./Images/TwitterSentimentAnalysis.png"
 import ImageClassifyImg from "./Images/ImageClassification.png"
+import ShopifyChallengeImg from "./Images/ShopifyChallenge.png"
 
 export default [
     {
@@ -55,5 +56,11 @@ export default [
         link: "https://github.com/PreethiK7/ImageClassification",
         imageUrl: ImageClassifyImg,
         id: 8
+    },
+    {
+        title: "Shopify Web Developer Challenge",
+        link: "https://github.com/PreethiK7/shopify-the-shoppies",
+        imageUrl: ShopifyChallengeImg,
+        id: 9
     }
 ]
