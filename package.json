@@ -15,7 +15,7 @@
     "body-parser": "^1.19.0",
     "cors": "^2.8.5",
     "debug": "~2.6.9",
-    "express": "~4.16.1",
+    "express": "~4.17.3",
     "nodemailer": "^6.4.10",
     "dotenv": "^8.2.0"
   },
